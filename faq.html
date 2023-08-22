@@ -55,6 +55,10 @@
       line-height: 1.5;
     }
 
+    .faq-radio:checked~.faq-answer {
+      display: block;
+    }
+
     .faq-answer p:last-child {
       margin-bottom: 0;
     }
@@ -104,26 +108,48 @@
   </nav>
   <div class="faq-container">
     <div class="faq-item">
-      <div class="faq-question" data-toggle="collapse" data-target="#answer1">How do I create a playlist?</div>
-      <div id="answer1" class="faq-answer collapse">
+      <label class="faq-question" for="answer1">How do I create a playlist?</label>
+      <input type="radio" id="answer1" class="faq-radio" name="faq">
+      <div class="faq-answer">
         To create a playlist, go to your Library and click on the "Create Playlist" button. Give your playlist a name
         and description, then start adding your favorite songs to it.
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question" data-toggle="collapse" data-target="#answer2">Can I download songs for offline
-        listening?</div>
-      <div id="answer2" class="faq-answer collapse">
+      <label class="faq-question" for="answer2">Can I download songs for offline listening?</label>
+      <input type="radio" id="answer2" class="faq-radio" name="faq">
+      <div class="faq-answer">
         Yes, Spotify Premium users can download songs, albums, and playlists for offline listening. Just click the
         download button next to the content you want to save.
       </div>
     </div>
+    <div class="faq-item">
+      <label class="faq-question" for="answer3">How can I discover new music?</label>
+      <input type="radio" id="answer3" class="faq-radio" name="faq">
+      <div class="faq-answer">
+        There are several ways to discover new music on Spotify. You can explore curated playlists under the "Browse"
+        section,
+        check out personalized recommendations on the "Discover" tab, and listen to radio stations based on your
+        favorite artists
+        or genres. Additionally, you can follow friends or public playlists to find fresh tracks.
+      </div>
+    </div>
+    <div class="faq-item">
+      <label class="faq-question" for="answer4">Is there a free version of Spotify?</label>
+      <input type="radio" id="answer4" class="faq-radio" name="faq">
+      <div class="faq-answer">
+        Yes, there is a free version of Spotify. With the free plan, you can listen to music, create playlists, and
+        discover new tracks.
+        However, you'll hear ads between songs, and you won't have the ability to download content for offline
+        listening. If you want
+        an ad-free experience with offline access, you can consider upgrading to Spotify Premium.
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Add more FAQ items here -->
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
